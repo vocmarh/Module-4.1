@@ -10,10 +10,12 @@ namespace Module_4._1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write your favorite color in English with lower case letter");
-            for (int i = 1; i < 5; i++)
+            
+            int t = 0;
+            do
             {
-                Console.WriteLine(i);                
+                Console.WriteLine("Write your favorite color in English with lower case letter");
+                Console.WriteLine(t++);
                 switch (Console.ReadLine())
                 {
                     case "red":
@@ -41,8 +43,7 @@ namespace Module_4._1
                         break;
                 }
             }
-
-            
+            while (t < 3);
 
             Console.ReadKey();
 

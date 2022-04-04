@@ -15,32 +15,31 @@ namespace Module_4._1
             do
             {
                 Console.WriteLine("Write your favorite color in English with lower case letter");
-                Console.WriteLine(t++);
-                switch (Console.ReadLine())
+                var text = Console.ReadLine();
+                switch (text)
                 {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
                         Console.ForegroundColor = ConsoleColor.Black;
-                        Console.WriteLine("Your color is red");
+
+                        Console.WriteLine("Your color is red!");
                         break;
 
                     case "green":
                         Console.BackgroundColor = ConsoleColor.Green;
                         Console.ForegroundColor = ConsoleColor.Black;
-                        Console.WriteLine("Your color is green");
+
+                        Console.WriteLine("Your color is green!");
                         break;
 
                     case "cyan":
                         Console.BackgroundColor = ConsoleColor.Cyan;
                         Console.ForegroundColor = ConsoleColor.Black;
-                        Console.WriteLine("Your color is cyan");
-                        break;
 
-                    default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Your color is yellow");
+                        Console.WriteLine("Your color is cyan!");
                         break;
+                    default:
+                        continue;
                 }
             }
             while (t < 3);
